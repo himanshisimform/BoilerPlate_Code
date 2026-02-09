@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Simform Solutions",
+  "classifications": [
+    "Web",
+    "WebAPI",
+    "Microservice",
+    "ASP.NET Core",
+    "Clean Architecture"
+  ],
+  "identity": "Simform.Microservice.Template",
+  "name": "Simform Microservice Boilerplate",
+  "shortName": "simform-boilerplate",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "sourceName",
+  "preferNameDirectory": true,
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net9.0",
+          "description": "Target .NET 9.0"
+        }
+      ],
+      "defaultValue": "net9.0",
+      "replaces": "net9.0"
+    },
+    "UseHttps": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "description": "Whether to use HTTPS"
+    }
+  },
+  "sources": [
+    {
+      "rename": {
+        "sourceName.Api": "sourceName.Api",
+        "sourceName.Database": "sourceName.Database", 
+        "sourceName.DTO": "sourceName.DTO",
+        "sourceName.Repository": "sourceName.Repository",
+        "sourceName.Service": "sourceName.Service",
+        "sourceName.UnitTest": "sourceName.UnitTest",
+        "sourceName.Utility": "sourceName.Utility"
+      }
+    }
+  ],
+  "primaryOutputs": [
+    {
+      "path": "sourceName.sln"
+    }
+  ]
+}
