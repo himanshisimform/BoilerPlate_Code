@@ -2,19 +2,19 @@ Microsoft Visual Studio Solution File, format version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sourceName.Api", "sourceName.Api\sourceName.Api.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimformMicroservice-Project1.Api", "SimformMicroservice-Project1.Api\SimformMicroservice-Project1.Api.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sourceName.Database", "sourceName.Database\sourceName.Database.csproj", "{B2C3D4E5-F6G7-8901-BCDE-F12345678901}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimformMicroservice-Project1.Database", "SimformMicroservice-Project1.Database\SimformMicroservice-Project1.Database.csproj", "{B2C3D4E5-F6G7-8901-BCDE-F12345678901}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sourceName.DTO", "sourceName.DTO\sourceName.DTO.csproj", "{C3D4E5F6-G7H8-9012-CDEF-123456789012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimformMicroservice-Project1.DTO", "SimformMicroservice-Project1.DTO\SimformMicroservice-Project1.DTO.csproj", "{C3D4E5F6-G7H8-9012-CDEF-123456789012}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sourceName.Repository", "sourceName.Repository\sourceName.Repository.csproj", "{D4E5F6G7-H8I9-0123-DEF1-234567890123}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimformMicroservice-Project1.Repository", "SimformMicroservice-Project1.Repository\SimformMicroservice-Project1.Repository.csproj", "{D4E5F6G7-H8I9-0123-DEF1-234567890123}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sourceName.Service", "sourceName.Service\sourceName.Service.csproj", "{E5F6G7H8-I9J0-1234-EF12-345678901234}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimformMicroservice-Project1.Service", "SimformMicroservice-Project1.Service\SimformMicroservice-Project1.Service.csproj", "{E5F6G7H8-I9J0-1234-EF12-345678901234}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sourceName.UnitTest", "sourceName.UnitTest\sourceName.UnitTest.csproj", "{F6G7H8I9-J0K1-2345-F123-456789012345}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimformMicroservice-Project1.UnitTest", "SimformMicroservice-Project1.UnitTest\SimformMicroservice-Project1.UnitTest.csproj", "{F6G7H8I9-J0K1-2345-F123-456789012345}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sourceName.Utility", "sourceName.Utility\sourceName.Utility.csproj", "{G7H8I9J0-K1L2-3456-1234-567890123456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimformMicroservice-Project1.Utility", "SimformMicroservice-Project1.Utility\SimformMicroservice-Project1.Utility.csproj", "{G7H8I9J0-K1L2-3456-1234-567890123456}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
