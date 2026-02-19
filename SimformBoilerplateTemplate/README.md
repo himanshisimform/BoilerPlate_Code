@@ -1,8 +1,10 @@
-# 🚀 Simform Microservice Template - Demo for Senior
+# 🚀 Simform Microservice Template
+
+A **complete, production-ready** `dotnet new` template that generates enterprise-grade ASP.NET Core microservices with clean architecture, JWT authentication, and best practices built-in.
 
 ## 📋 What This Template Provides
 
-A **complete, production-ready** `dotnet new` template that generates:
+Instantly generates:
 - **Clean Architecture** ASP.NET Core Web API
 - **JWT Authentication** with refresh tokens
 - **Entity Framework Core** with Identity
@@ -25,7 +27,7 @@ A **complete, production-ready** `dotnet new` template that generates:
 ### Installation (One-time setup)
 ```bash
 # Install the template
-dotnet new install ./SimformTemplate
+dotnet new install ./SimformBoilerplateTemplate
 
 # Verify installation
 dotnet new list | grep simform
@@ -35,16 +37,18 @@ dotnet new list | grep simform
 ```bash
 # Generate a new project (any domain)
 dotnet new simform-microservice -n SchoolManagement
-dotnet new simform-microservice -n HRSystem  
+dotnet new simform-microservice -n HRSystem
 dotnet new simform-microservice -n InventoryAPI
 
 # Each generates a complete solution with:
 # - SchoolManagement.sln
-# - SchoolManagement.API/
-# - SchoolManagement.Application/
-# - SchoolManagement.Domain/
-# - SchoolManagement.Infrastructure/
-# - SchoolManagement.UnitTests/
+# - SchoolManagement.Api/
+# - SchoolManagement.Database/
+# - SchoolManagement.DTO/
+# - SchoolManagement.Repository/
+# - SchoolManagement.Service/
+# - SchoolManagement.UnitTest/
+# - SchoolManagement.Utility/
 ```
 
 ## 🏗️ Generated Project Structure
@@ -52,15 +56,15 @@ dotnet new simform-microservice -n InventoryAPI
 ```
 SchoolManagement/                    # Auto-generated project name
 ├── SchoolManagement.sln            # Solution file
-├── src/
-│   ├── SchoolManagement.API/        # Controllers, Program.cs, Swagger
-│   ├── SchoolManagement.Application/# Services, DTOs, Interfaces
-│   ├── SchoolManagement.Domain/     # Entities, Domain interfaces
-│   └── SchoolManagement.Infrastructure/ # Database, Repositories
-├── tests/
-│   └── SchoolManagement.UnitTests/  # Unit tests with xUnit
-├── README.md                        # Project-specific documentation
-└── .gitignore                       # Standard .NET gitignore
+├── SchoolManagement.Api/           # Controllers, Program.cs, Swagger
+├── SchoolManagement.Database/      # EF Core, Migrations, DbContext
+├── SchoolManagement.DTO/           # Data Transfer Objects
+├── SchoolManagement.Repository/    # Data access layer
+├── SchoolManagement.Service/       # Business logic layer
+├── SchoolManagement.UnitTest/      # Unit tests
+├── SchoolManagement.Utility/       # Shared utilities
+├── README.md                       # Project documentation
+└── .gitignore                      # Standard .NET gitignore
 ```
 
 ## ⚡ Quick Demo
@@ -75,7 +79,7 @@ cd HRSystem
 ```bash
 dotnet restore
 dotnet build
-cd src/HRSystem.API
+cd HRSystem.Api
 dotnet run
 ```
 
@@ -84,7 +88,7 @@ dotnet run
 - **Health Check**: https://localhost:7001/health
 - **API Endpoints**: `/api/v1/auth/`, `/api/v1/users/`
 
-## 🎖️ Key Features Demonstrated
+## 🎖️ Key Features
 
 ### ✅ Authentication & Security
 - JWT token authentication with refresh tokens
@@ -93,10 +97,11 @@ dotnet run
 - Secure password policies
 
 ### ✅ Clean Architecture
-- **Domain**: Pure business entities and interfaces
-- **Application**: Use cases, DTOs, business logic
-- **Infrastructure**: Database, external services
-- **API**: Controllers, middleware, configuration
+- **API Layer**: Controllers and middleware
+- **Service Layer**: Business logic and validation
+- **Repository Layer**: Data access
+- **Database Layer**: EF Core models and migrations
+- **DTO Layer**: Clean data contracts
 
 ### ✅ Developer Experience
 - **Auto-generated Swagger docs** for immediate API testing
@@ -110,18 +115,6 @@ dotnet run
 - Automatic database creation and seeding
 - Pre-configured Identity tables and relationships
 
-## 📊 Template vs Manual Development
-
-| Task | Manual Development | With Template |
-|------|-------------------|---------------|
-| Project Setup | 2-4 hours | 30 seconds |
-| Authentication Setup | 4-8 hours | ✅ Included |
-| Database Configuration | 2-3 hours | ✅ Included |
-| API Documentation | 1-2 hours | ✅ Auto-generated |
-| Exception Handling | 2-3 hours | ✅ Included |
-| Logging Setup | 1-2 hours | ✅ Included |
-| Unit Test Structure | 2-3 hours | ✅ Included |
-| **Total Time Saved** | **14-25 hours** | **< 1 hour** |
 
 ## 🔄 Distribution & Maintenance
 
@@ -155,7 +148,7 @@ dotnet run
 - 📈 **Scalability**: Easy to add new microservices
 - ✅ **Quality**: Best practices enforced by template
 
-## 🚀 Next Steps for Your Organization
+## 🚀 Next Steps
 
 1. **Customize the Template**
    - Add your organization's specific requirements
