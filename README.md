@@ -30,15 +30,15 @@ Instantly generates:
 dotnet new install ./SimformBoilerplateTemplate
 
 # Verify installation
-dotnet new list | grep simform
+dotnet new list | findstr simform
 ```
 
 ### Creating New Projects
 ```bash
 # Generate a new project (any domain)
-dotnet new simform-microservice -n SchoolManagement
-dotnet new simform-microservice -n HRSystem
-dotnet new simform-microservice -n InventoryAPI
+dotnet new simform-boilerplate -n SchoolManagement
+dotnet new simform-boilerplate -n HRSystem
+dotnet new simform-boilerplate -n InventoryAPI
 
 # Each generates a complete solution with:
 # - SchoolManagement.sln
@@ -71,15 +71,15 @@ SchoolManagement/                    # Auto-generated project name
 
 ### 1. Generate a Project
 ```bash
-dotnet new simform-microservice -n HRSystem
+dotnet new simform-boilerplate -n HRSystem
 cd HRSystem
 ```
 
 ### 2. Run Immediately
 ```bash
+cd HRSystem.Api
 dotnet restore
 dotnet build
-cd HRSystem.Api
 dotnet run
 ```
 
@@ -125,9 +125,6 @@ dotnet run
 
 2. **Git Repository**
    - Developers clone and install: `dotnet new install ./path/to/template`
-
-3. **CI/CD Integration**
-   - Automate template updates through build pipelines
 
 ### Template Updates
 - Update the template source code
